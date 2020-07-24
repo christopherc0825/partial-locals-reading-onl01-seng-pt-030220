@@ -1,4 +1,4 @@
 Information About the Post
-<%= render 'authors/author' %>
+<%= render partial: "authors/author", locals: {post_author: @author} %>
 <%= @post.title %>
 <%= @post.content %>
